@@ -142,7 +142,7 @@ main {
     display: inline-block;
     color: var(--light-bgr);
     text-decoration: none;
-    font-size: 0.65em;
+    font-size: 0.75em;
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
@@ -635,4 +635,5 @@ input:focus {
     color: var(--hgad-main-color);
 
 }
+
 
