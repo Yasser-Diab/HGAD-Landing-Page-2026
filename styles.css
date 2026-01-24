@@ -311,11 +311,10 @@ section {
 iframe {
     display: block;
     width: 100%;
-    height: auto;
+    height: 920px;
     margin: 1em auto;
     border-radius: 0.5em;
     border: 1px dashed var(--hgad-sub-color);
-
 }
 
 
@@ -636,3 +635,4 @@ input:focus {
     color: var(--hgad-main-color);
 
 }
+
