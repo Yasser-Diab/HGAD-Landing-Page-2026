@@ -142,7 +142,7 @@ main {
     display: inline-block;
     color: var(--light-bgr);
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.65em;
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
@@ -634,4 +634,5 @@ input:focus {
 .footer-link a:hover {
     text-decoration: underline;
     color: var(--hgad-main-color);
+
 }
