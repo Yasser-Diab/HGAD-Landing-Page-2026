@@ -1,0 +1,637 @@
+/* ======== Global settings ========  */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25.5vh;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+:root {
+    /* ---------- Color Set ---------- */
+    --hgad-main-color: rgb(220, 164, 25);
+    --hgad-main-color2: rgb(225, 180, 5);
+    --hgad-sub-color: rgb(184, 139, 26);
+    --hgad-txt-color1: blanchedalmond;
+    --dark-bgr: rgb(13, 13, 39);
+    --light-bgr: rgba(245, 245, 245, 0.901);
+    --lines-1: darkgray;
+    --lines-2: goldenrod;
+    --valid-bckgr: hsla(0, 0%, 10%, 1);
+    --achiv-bgr: rgba(45, 34, 4, 0.896);
+    --achiv-bgr2: rgb(34, 25, 0);
+    --ingr-bkgr: linear-gradient(45deg,
+            var(--achiv-bgr2),
+            var(--dark-bgr));
+    --ingr-bkgr-amaz: linear-gradient(90deg,
+            var(--achiv-bgr2),
+            black,
+            black,
+            var(--achiv-bgr));
+    --ingr-bkgr-2: linear-gradient(0deg,
+            var(--achiv-bgr2),
+            black);
+}
+
+body {
+    width: 100%;
+}
+
+
+/* ======== Main Page settings ========  */
+
+/* ---------- grid map ---------- */
+
+main {
+    display: grid;
+    grid-template-areas:
+        "hero"
+        "figuers"
+        "contact"
+        "services"
+        "projects"
+        "vision"
+        "footer"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 3vh;
+    background: var(--ingr-bkgr);
+    color: var(--light-bgr);
+    margin-top: 24.5vh;
+}
+
+
+
+/* ---------- grid areas ---------- */
+
+
+.hero {
+    grid-area: hero;
+}
+
+#Services {
+    grid-area: services;
+}
+
+#Projects {
+    grid-area: projects;
+}
+
+#k-figuers {
+    grid-area: figuers;
+}
+
+#Vision {
+    grid-area: vision;
+}
+
+#Contact {
+    grid-area: contact;
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+/* ======== Header Styles ========  */
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--ingr-bkgr);
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "title"
+        "nav"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--lines-2);
+    height: 25vh;
+    z-index: 999;
+    border-radius: 0 0 0.3em 0.3em;
+}
+
+/* ---------- Header nav bar ---------- */
+
+
+#header nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.nav-link {
+    display: inline-block;
+    color: var(--light-bgr);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    padding: 0 2.2em 0 0;
+}
+
+.main-title {
+    grid-area: title;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.main-title h1 {
+    font-size: 0.9em;
+    color: var(--hgad-sub-color);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0.15em;
+    display: inline-block;
+    border-right: 1em solid transparent;
+    border-left: 1em solid transparent;
+    border-top: 1em solid gold;
+}
+
+/* ---------- Header img ---------- */
+
+#header-img {
+    grid-area: logo;
+    display: block;
+    height: 12vh;
+    width: auto;
+    margin: 0.4em auto;
+}
+
+
+/* ======== Sections Styles ========  */
+
+section {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.sec-heading {
+    margin: 1em auto 1em auto;
+    text-align: center;
+    font-size: 1.6em;
+    color: var(--light-bgr);
+    box-shadow: 0 0 500px 20px var(--hgad-txt-color1);
+    width: fit-content;
+    padding: 0.5em 0.75em;
+    border-bottom: 1px solid var(--lines-2);
+    border-radius: 0.15em 0.25em 0.25em 1em;
+}
+
+.small-head {
+    margin: 1em auto 1em auto;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--lines-2);
+    box-shadow: 0 0 500px 20px var(--hgad-txt-color1);
+    font-size: 1.5em;
+    color: var(--light-bgr);
+    text-align: center;
+    border-radius: 0.5em;
+    width: fit-content;
+    padding: 0.5em 0.75em;
+}
+
+.sec-subheading {
+    font-size: 1.3em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+/* ======== Hero Styles ========  */
+
+.hero {
+    background-color: var(--achiv-bgr2);
+    border-radius: 0 0 0.5em 0.5em;
+    box-shadow: 0 5px 550px 0 var(--hgad-txt-color1);
+    border-bottom: 1px solid gold;
+}
+
+.b-header {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.25em;
+    color: var(--hgad-main-color2);
+    letter-spacing: 0.20em;
+    line-height: 1.6;
+    font-size: 1.9em;
+    text-shadow: 4px 0 5px black;
+    background: var(--ingr-bkgr-amaz);
+}
+
+.header-h {
+    color: var(--hgad-txt-color1);
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+    background: var(--ingr-bkgr-amaz);
+}
+
+.hero-2 {
+    color: var(--hgad-txt-color1);
+    font-size: 1.2em;
+    text-align: center;
+    background: var(--ingr-bkgr-amaz);
+    padding: 0.5em;
+}
+
+.hero>p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* ======== features-ul Styles ========  */
+
+
+.features-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5em;
+}
+
+
+.features-li {
+    display: block;
+    height: fit-content;
+    padding: 0.75em;
+    border: 1px solid var(--lines-1);
+    border-radius: 1em;
+    background-color: var(--achiv-bgr);
+}
+
+
+.features-li h3 {
+    color: var(--hgad-txt-color1);
+    text-align: center;
+}
+
+.features-li h2 {
+    color: var(--hgad-txt-color1);
+    text-align: center;
+}
+
+.features-li p {
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* ======== video Styles ========  */
+
+iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    border: 1px dashed var(--hgad-sub-color);
+
+}
+
+
+/* ======== Projects Styles ========  */
+
+
+#Projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 0.75em;
+}
+
+.proj-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    width: 90%;
+    height: 80px;
+    border-bottom: 1px solid var(--lines-2);
+    border-right: 1px solid var(--lines-2);
+    border-radius: 0.15em 0.25em 0.25em 1em;
+    background: var(--ingr-bkgr-amaz);
+}
+
+.proj-h2 {
+    display: block;
+    color: var(--hgad-txt-color1);
+    width: 58%;
+    text-align: center;
+    margin: 0 1em 0 0;
+    font-size: 1.1em;
+}
+
+.proj-p {
+    position: relative;
+    width: 38%;
+    vertical-align: middle;
+    color: var(--hgad-sub-color);
+    padding: 1em;
+}
+
+.proj-p::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background: var(--hgad-sub-color);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+
+.proj-p::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 19px;
+    width: 7px;
+    height: 7px;
+    background: var(--ingr-bkgr);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+
+
+/* ======== key figuers Styles ========  */
+
+.k-figuers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.figuer {
+    font-size: 1.3em;
+    width: 88%;
+    text-align: center;
+    padding: 0.5em 0 0.5em 1.5em;
+    border: 1px solid hsla(55, 100%, 50%, 1);
+    background: linear-gradient(123deg,
+            hsla(0, 0%, 0%, 1) 0% 30%,
+            hsla(45, 100%, 40%, 1),
+            hsla(0, 0%, 20%, 1),
+            hsla(0, 0%, 0%, 1));
+    background-size: 300% 300%;
+
+    animation: metallicShift 12s ease infinite alternate;
+    border-radius: 3em;
+    position: relative;
+}
+
+@keyframes metallicShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.figuer-key {
+    position: absolute;
+    top: 0.13em;
+    left: 0.5em;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    background: linear-gradient(35deg,
+            hsla(35, 100%, 50%, 1),
+            white,
+            hsla(0, 0%, 4%, 1));
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: textShift 7s ease-in-out infinite alternate;
+}
+
+@keyframes textShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* ======== Contact Styles ========  */
+
+
+form {
+    margin: 1em auto;
+    padding: 0.25em;
+    display: grid;
+    gap: 0.5em;
+    grid-template-areas:
+        "name name"
+        "email email"
+        "phone phone"
+        "country state"
+        "city project"
+        "details details"
+        "file file"
+        "button button"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+#Contact {
+    width: 95%;
+    margin: 1em auto;
+    background: linear-gradient(145deg,
+            hsla(45, 100%, 40%, 1),
+            hsla(0, 0%, 0%, 1) 20%,
+            hsla(0, 0%, 0%, 1)80%,
+            hsla(45, 100%, 40%, 1));
+    border-radius: 0.75em;
+    padding-bottom: 0;
+}
+
+select,
+textarea,
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.35em;
+    margin: 0.35em auto 0.5em auto;
+    background: var(--ingr-bkgr);
+    color: var(--light-bgr);
+    border: 1px solid blanchedalmond;
+    font-size: 1em;
+    transition: all 0.1s ease-in-out;
+}
+
+select:valid,
+textarea:valid,
+input:valid {
+    border-color: gold;
+    background: var(--valid-bckgr);
+    color: var(--light-bgr);
+}
+
+select:invalid,
+textarea:invalid,
+input:invalid {
+    border-color: darkred;
+}
+
+select:focus,
+option:focus,
+input:focus {
+    border-color: hsla(0, 0%, 30%, 1);
+    background: var(--valid-bckgr);
+    color: var(--light-bgr);
+}
+
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.country {
+    grid-area: country;
+}
+
+.governorate {
+    grid-area: state;
+}
+
+.city {
+    grid-area: city;
+}
+
+.project {
+    grid-area: project;
+}
+
+.details {
+    grid-area: details;
+}
+
+.files {
+    grid-area: file;
+}
+
+#submit {
+    grid-area: button;
+    width: 70%;
+    margin: 1em auto 0 auto;
+    padding: 0.5em 0;
+    border-radius: 0.25em 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: rgb(84, 134, 84);
+    border-bottom: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    background: var(--ingr-bkgr-amaz);
+    border-color: gold;
+}
+
+#submit:active {
+    transform: scale(1.5);
+}
+
+
+/* ======== Footer Styles ========  */
+
+.footer {
+    background-color: var(--valid-bckgr);
+    height: 10vh;
+    border-top: 1px solid var(--lines-2);
+    border-radius: 0.3em 0.3em 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--hgad-main-color2);
+    font-size: 1.05em;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(--hgad-main-color2);
+}
+
+.footer-link a:active,
+.footer-link a:hover {
+    text-decoration: underline;
+    color: var(--hgad-main-color);
+}
