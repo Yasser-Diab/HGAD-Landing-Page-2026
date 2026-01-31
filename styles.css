@@ -97,7 +97,7 @@ main {
 }
 
 
-.footer {
+footer {
     grid-area: footer;
 }
 
@@ -146,7 +146,7 @@ main {
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
-    padding: 0 2em 0 0;
+    padding: 0 1.5em 0 0;
 }
 
 .main-title {
@@ -165,11 +165,11 @@ main {
     content: "";
     position: absolute;
     right: 0;
-    top: 0.15em;
+    top: 0.25em;
     display: inline-block;
-    border-right: 1em solid transparent;
-    border-left: 1em solid transparent;
-    border-top: 1em solid gold;
+    border-right: 0.75em solid transparent;
+    border-left: 0.75em solid transparent;
+    border-top: 0.75em solid gold;
 }
 
 /* ---------- Header img ---------- */
@@ -191,7 +191,7 @@ section {
 }
 
 .sec-heading {
-    margin: 1em auto 1em auto;
+    margin: 0.25em auto 0.25em auto;
     text-align: center;
     font-size: 1.6em;
     color: var(--light-bgr);
@@ -203,7 +203,7 @@ section {
 }
 
 .small-head {
-    margin: 1em auto 1em auto;
+    margin: 0.21em auto 0.21em auto;
     padding: 0.5em;
     border-bottom: 1px solid var(--lines-2);
     box-shadow: 0 0 500px 20px var(--hgad-txt-color1);
@@ -234,8 +234,6 @@ section {
 .b-header {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    padding-top: 0.25em;
     color: var(--hgad-main-color2);
     letter-spacing: 0.20em;
     line-height: 1.6;
@@ -591,20 +589,20 @@ input:focus {
     font-size: 1em;
     font-weight: 700;
     color: whitesmoke;
-    background-color: rgb(84, 134, 84);
+    background-color: rgb(135, 134, 84);
     border-bottom: 2px solid whitesmoke;
     border-right: 2px solid whitesmoke;
     transition: all 0.4s ease-in-out;
 }
 
 #submit:hover {
-    transform: scale(1.05);
+    transform: scale(1.01) translateY(-5px);
     background: var(--ingr-bkgr-amaz);
     border-color: gold;
 }
 
 #submit:active {
-    transform: scale(1.5);
+    transform: scale(1.08);
 }
 
 
@@ -634,4 +632,414 @@ input:focus {
 .footer-link a:hover {
     text-decoration: underline;
     color: var(--hgad-main-color);
+}
+
+
+
+
+
+
+/* =========================== |||||||||||||||| Media Qureis |||||||||||||||| =========================== */
+
+
+
+
+
+
+
+
+
+/* =========================== |||||||||||||||| Landscape for Phones Qurey |||||||||||||||| =========================== */
+
+
+@media (min-width: 665px) or (orientation: landscape) {
+    /* ======== Global settings ========  */
+
+    html {
+        scroll-padding-top: 92px;
+
+    }
+
+
+    /* ======== Main Page settings ========  */
+
+    /* ---------- grid map ---------- */
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "hero hero"
+            "figuers figuers"
+            "contact contact"
+            "projects projects"
+            "vision services"
+            "footer footer"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 3vh;
+        margin-top: 85px;
+    }
+
+
+
+    /* ======== Header Styles ========  */
+
+
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--ingr-bkgr);
+        display: grid;
+        grid-template-areas:
+            "logo title title"
+            "logo title title"
+            "logo nav nav"
+        ;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        border-bottom: 2px solid var(--lines-2);
+        height: 94px;
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    /* ---------- Header nav bar ---------- */
+
+
+    #nav-bar {
+        grid-area: nav;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 0.99em;
+        padding: 0 1.8em 0 0;
+    }
+
+    .main-title {
+        grid-area: title;
+        text-align: center;
+        letter-spacing: 1px;
+
+    }
+
+    .main-title h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-link::after {
+        top: 0.25em;
+        border-right: 0.75em solid transparent;
+        border-left: 0.75em solid transparent;
+        border-top: 0.75em solid gold;
+    }
+
+    /* ---------- Header img ---------- */
+
+    #header-img {
+        grid-area: logo;
+        position: absolute;
+        top: 1%;
+        display: block;
+        height: 75px;
+        margin: 5%;
+    }
+
+
+    /* ======== Sections Styles ========  */
+
+    section {
+        width: 100%;
+        padding: 0.2em;
+    }
+
+    .sec-heading {
+        font-size: 1.5em;
+        box-shadow: 0 0 300px 30px var(--hgad-txt-color1);
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
+        width: 100%;
+    }
+
+    .small-head {
+        box-shadow: 0 0 300px 35px var(--hgad-txt-color1);
+        font-size: 1.4em;
+        padding: 0.25em 0.5em;
+        width: 90%;
+    }
+
+    .sec-subheading {
+        font-size: 1.2em;
+    }
+
+
+    /* ======== Hero Styles ========  */
+
+    .hero {
+        display: grid;
+        grid-template-areas:
+            "intro vid"
+            "why core"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1.5fr;
+        gap: 2%;
+        background-color: var(--achiv-bgr2);
+        border-radius: 0 0 0.5em 0.5em;
+        box-shadow: 0 5px 550px 0 var(--hgad-txt-color1);
+        border-bottom: 1px solid gold;
+    }
+
+    .intro {
+        grid-area: intro;
+        height: 100%;
+        border: 1px solid var(--lines-2);
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .why-hgad {
+        grid-area: why;
+        height: 100%;
+    }
+
+    .core {
+        height: 100%;
+        grid-area: core;
+    }
+
+    .video {
+        grid-area: vid;
+        height: 100%;
+        border: 1px solid var(--lines-2);
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    /* ======== video Styles ========  */
+
+    iframe {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin: 1em auto;
+        border-radius: 0.5em;
+        border: 1px dashed var(--hgad-sub-color);
+
+    }
+
+    .hero-text {
+        display: grid;
+        grid-template-areas:
+            "b h"
+            "b hero2"
+        ;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: auto 2fr;
+        justify-content: center;
+    }
+
+    .b-header {
+        grid-area: b;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        letter-spacing: 0.6em;
+        font-size: 1.9em;
+        text-shadow: 4px 0 5px black;
+        flex-shrink: 0;
+        background: none;
+    }
+
+    .header-h {
+        grid-area: h;
+        background: none;
+        margin-top: 1em;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .hero-2 {
+        grid-area: hero2;
+        background: none;
+        font-size: 1.2em;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .intro>p {
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    /* ======== features-ul Styles ========  */
+
+
+    .why-hgad .features-ul .features-li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20%;
+        width: 100%;
+        padding: 0.75em;
+        border: 1px solid var(--lines-2);
+        border-radius: 1em;
+        background-color: var(--achiv-bgr);
+    }
+
+    .why-hgad .features-ul {
+        display: flex;
+        gap: 2%;
+        height: 87%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .core .features-ul .features-li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 14%;
+        width: 100%;
+        padding: 0.75em;
+        border: 1px solid var(--lines-2);
+        border-radius: 1em;
+        background-color: var(--achiv-bgr);
+    }
+
+    .core .features-ul {
+        display: flex;
+        gap: 2%;
+        height: 85%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ======== key figuers Styles ========  */
+
+    .k-figuers {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .figuer {
+        font-size: 1.2em;
+        width: 43%;
+        border: 2px solid hsla(55, 100%, 50%, 1);
+    }
+
+    .figuer-key {
+        top: 0.2em;
+        right: auto;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+
+
+    /* ======== Contact Styles ========  */
+
+
+    form {
+        margin: 1em auto;
+        padding: 0.25em;
+        display: grid;
+        gap: 0.5em;
+        grid-template-areas:
+            "name email email phone"
+            "country state city project"
+            "file file file file"
+            "details details space space"
+            "details details button button"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+
+
+    }
+
+    #submit {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 1em;
+    }
+
+
+
+
+    /* ======== Projects Styles ========  */
+
+
+
+    .projects-ul {
+        gap: 1em;
+    }
+
+    .proj-li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.15em;
+        padding: 0.25em;
+        width: 48%;
+        height: 80px;
+        border-bottom: 1px solid var(--lines-2);
+        border-right: 1px solid var(--lines-2);
+        border-radius: 0.15em 0.25em 0.25em 1em;
+        background: var(--ingr-bkgr-amaz);
+    }
+
+    .proj-h2 {
+        font-size: 1em;
+    }
+
+    .proj-p {
+        width: 40%;
+    }
+
+
+
+
+
+
+    /* ======== Footer Styles ========  */
+    footer {
+        width: 100%;
+        height: 92px;
+        background-color: var(--valid-bckgr);
+
+    }
+
+    .footer {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.75em;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        color: var(--hgad-main-color2);
+        font-size: 1.05em;
+    }
 }
