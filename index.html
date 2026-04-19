@@ -2,582 +2,527 @@
 <html lang="en">
 
 <head>
-    <title>Product Landing Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HGAD delivers aluminium systems, facade engineering, and project execution support for high-performance buildings.">
+    <title>HGAD | Aluminium Systems and Facade Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&family=Cormorant+Garamond:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <header class="site-header" id="header">
+        <div class="header-shell">
+            <a class="brand" href="#Features" aria-label="HGAD home">
+                <img id="header-img" src="media/HGAD-Dark.png" alt="HGAD logo" width="240" height="240">
+                <div class="brand-copy">
+                    <span class="brand-kicker">HGAD</span>
+                    <span class="brand-name">Handasia Group for Architectural Designs</span>
+                    <span class="brand-ar" lang="ar" dir="rtl">&#1575;&#1604;&#1605;&#1580;&#1605;&#1608;&#1593;&#1577;
+                        &#1575;&#1604;&#1607;&#1606;&#1583;&#1587;&#1610;&#1577;
+                        &#1604;&#1604;&#1578;&#1589;&#1605;&#1610;&#1605;&#1575;&#1578;
+                        &#1575;&#1604;&#1605;&#1593;&#1605;&#1575;&#1585;&#1610;&#1577;</span>
+                </div>
+            </a>
 
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-bar"
+                aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <main>
-
-        <!-- ============= Header ============= -->
-
-
-        <header id="header">
-
-            <!-- ---------- Navegation Logo ---------- -->
-            <img id="header-img" src="media/HGAD-Dark.png" alt="HGAD logo" width="240" height="240">
-            <!-- ---------- Navegation Bar ---------- -->
-            <div class="main-title">
-                <h1>Handasia Group for Architectural Designs</h1>
-                <h1 lang="ar">المجموعة الهندسية للتصميمات المعمارية</h1>
-            </div>
-            <nav id="nav-bar">
-                <a href="#Features" class="nav-link nav1">About</a>
-                <a href="#Contact" class="nav-link nav5">Contact</a>
-                <a href="#Services" class="nav-link nav2">Services</a>
-                <a href="#Projects" class="nav-link nav3">Projects</a>
-                <a href="#Vision" class="nav-link nav4">Vision</a>
-                
+            <nav id="nav-bar" class="site-nav" aria-label="Primary">
+                <a href="#Features" class="nav-link">About</a>
+                <a href="#Services" class="nav-link">Services</a>
+                <a href="#Projects" class="nav-link">Projects</a>
+                <a href="#Vision" class="nav-link">Philosophy</a>
+                <a href="#Contact" class="nav-link">Contact</a>
             </nav>
 
+            <a class="button button-primary header-cta" href="#Contact">Request a Quote</a>
+        </div>
+    </header>
 
-        </header>
-        <!-- ========== ///////////////////////////////// ========== -->
+    <main>
+        <section class="section hero-section" id="Features">
+            <div class="section-shell hero-layout">
+                <div class="hero-copy fade-up">
+                    <span class="eyebrow">Aluminium systems | Facade engineering | Project delivery</span>
+                    <h1>Engineered facade systems for buildings that need precision, performance, and presence.</h1>
+                    <p>
+                        HGAD partners with developers, consultants, contractors, and private clients to deliver
+                        aluminium, glass, and cladding systems that balance design ambition with buildability and
+                        long-term durability.
+                    </p>
 
-        <!-- ============= Hero Section ============= -->
-
-        <section class="hero" id="Features">
-            <div class="intro">
-                <div class="hero-heading">
-
-
-                    <div class="hero-text">
-                        <h1 class="b-header">HGAD</h1>
-                        <h1 class="header-h">ALUMINIUM SYSTEMS AND FAÇADE ENGINEERING</h1>
-                        <h2 class="hero-2">Modern, durable, and beautifully engineered solutions for buildings and
-                            interiors
-                        </h2>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#Contact">Start Your Project</a>
+                        <a class="button button-secondary" href="#Projects">View Projects</a>
                     </div>
+
+                    <ul class="chip-list" aria-label="Core HGAD systems">
+                        <li>Curtain wall systems</li>
+                        <li>Glass facades with cladding</li>
+                        <li>Doors and window systems</li>
+                        <li>Louvre and shading systems</li>
+                        <li>Glass railing systems</li>
+                        <li>Rolling shutter systems</li>
+                    </ul>
                 </div>
 
-                <h1 class="sec-heading">Who We Are</h1>
-                <p>HGAD (El Handasia Group for Architectural Designs) is an Egyptian leader in high-performance
-                    aluminium
-                    and glass façade systems. With over 10 years of engineering excellence and more than 100 successful
-                    projects, we combine innovation, precision, and international standards to deliver elegant yet
-                    resilient
-                    architectural solutions.</p>
-            </div>
+                <div class="hero-media fade-up">
+                    <div class="surface-card video-card">
+                        <span class="media-badge">Inside HGAD</span>
+                        <iframe class="hero-video" src="https://www.youtube.com/embed/bzDeacfTEvs?mute=1"
+                            title="HGAD video" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
 
-
-
-
-            <!-- ---------- Why HGAD? ---------- -->
-            <div class="why-hgad">
-
-                <h2 class="small-head">Why HGAD</h2>
-                <ul class="features-ul">
-                    <li class="features-li">
-                        <h3 class="li-h3">Engineering Excellence</h3>
-                        <p class="li-p">Comprehensive solutions that blend technical accuracy with modern architectural
-                            aesthetics.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">International Standards</h3>
-                        <p class="li-p">Our systems meet global quality benchmarks for performance, durability, and
-                            insulation.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Customization & Flexibility</h3>
-                        <p class="li-p">Tailored products designed to meet project-specific requirements, from
-                            aesthetics to
-                            engineering performance.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">End-to-End Support</h3>
-                        <p class="li-p">From initial design to project delivery and after-sales assistance, HGAD stands
-                            by
-                            every customer.</p>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- ///////////////////////////////// -->
-
-
-            <!-- ---------- Our Core Products & Systems ---------- -->
-
-            <div class="core">
-                <h2 class="small-head">Our Core Products & Systems</h2>
-                <ul class="features-ul">
-                    <li class="features-li">
-                        <h3 class="li-h3">Glass Façade with Cladding</h3>
-                        <p class="li-p">Elegant, high-performance façades that enhance building aesthetics while
-                            providing
-                            structural reliability.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Curtain Wall Systems</h3>
-                        <p class="li-p">Lightweight yet strong aluminium and glass curtain walls engineered for safety,
-                            insulation, and contemporary design.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Louvre Systems</h3>
-                        <p class="li-p">Functional shading and airflow systems with sleek architectural expression.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Glass Stair Railing Systems</h3>
-                        <p class="li-p">Modern and transparent railing solutions for interiors and exteriors.</p>
-                    </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Shutter & Rolling Systems</h3>
-                        <p class="li-p">Durable, precisely engineered shutter systems for security and weather
-                            protection.
+                    <div class="surface-card hero-panel">
+                        <h2>Designed for demanding project environments</h2>
+                        <p>
+                            We support the full path from design coordination and shop drawings to fabrication,
+                            installation, and post-handover performance.
                         </p>
+                        <ul class="check-list">
+                            <li>System selection aligned with design intent and performance targets</li>
+                            <li>Execution planning built around site realities, schedules, and quality control</li>
+                            <li>Architectural finishing that stays disciplined under technical constraints</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section impact-section" id="k-figuers">
+            <div class="section-shell">
+                <div class="section-heading is-centered">
+                    <span class="section-label">At a Glance</span>
+                    <h2>Built on experience, trust, and coordinated delivery</h2>
+                </div>
+
+                <div class="impact-grid">
+                    <article class="surface-card impact-card">
+                        <strong>10+</strong>
+                        <span>Years of experience</span>
+                    </article>
+                    <article class="surface-card impact-card">
+                        <strong>100+</strong>
+                        <span>Successful projects</span>
+                    </article>
+                    <article class="surface-card impact-card">
+                        <strong>100+</strong>
+                        <span>Trusted partners</span>
+                    </article>
+                    <article class="surface-card impact-card">
+                        <strong>20+</strong>
+                        <span>Professional certificates</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section overview-section">
+            <div class="section-shell overview-layout">
+                <div class="section-heading">
+                    <span class="section-label">Who We Are</span>
+                    <h2>Architecture-driven systems backed by engineering discipline.</h2>
+                    <p>
+                        HGAD is an Egyptian specialist in aluminium systems and facade engineering. For more than a
+                        decade, we have helped shape residential, hospitality, education, healthcare, and commercial
+                        developments with solutions that perform under real construction and operational conditions.
+                    </p>
+                </div>
+
+                <div class="card-grid info-grid">
+                    <article class="surface-card info-card">
+                        <h3>Engineering excellence</h3>
+                        <p>We combine design intent, buildability, and performance criteria into a coordinated delivery
+                            strategy.</p>
+                    </article>
+                    <article class="surface-card info-card">
+                        <h3>International standards</h3>
+                        <p>Our systems are selected and detailed to meet high expectations for durability, insulation,
+                            safety, and finish quality.</p>
+                    </article>
+                    <article class="surface-card info-card">
+                        <h3>Customization with control</h3>
+                        <p>Every solution is shaped around project requirements without losing technical rigor or site
+                            practicality.</p>
+                    </article>
+                    <article class="surface-card info-card">
+                        <h3>End-to-end support</h3>
+                        <p>From concept coordination to installation and after-sales follow-up, we stay involved where
+                            it matters most.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services-section" id="Services">
+            <div class="section-shell panel-grid">
+                <article class="surface-card panel-stack">
+                    <div class="section-heading">
+                        <span class="section-label">Our Services</span>
+                        <h2>Support across the full project lifecycle</h2>
+                        <p>We help teams move from requirements and detailing to installation and long-term system
+                            performance.</p>
+                    </div>
+
+                    <div class="card-grid compact-grid">
+                        <article class="service-card">
+                            <h3>Design and engineering</h3>
+                            <p>Detailed planning, system selection, and performance optimization for every project
+                                stage.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Fabrication and installation</h3>
+                            <p>Precision manufacturing paired with coordinated on-site delivery and installation.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Project management</h3>
+                            <p>Execution control, coordination, and timeline visibility that keep quality on track.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Technical support</h3>
+                            <p>Post-installation follow-up focused on reliability, maintenance, and client confidence.
+                            </p>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="surface-card panel-stack">
+                    <div class="section-heading">
+                        <span class="section-label">Core Systems</span>
+                        <h2>Solutions tailored to facade and interior performance</h2>
+                        <p>Our product range is selected to satisfy aesthetics, structural stability, movement,
+                            ventilation, and weather demands.</p>
+                    </div>
+
+                    <div class="card-grid compact-grid">
+                        <article class="system-card">
+                            <h3>Glass facade with cladding</h3>
+                            <p>High-performance facade packages that elevate building identity while staying technically
+                                dependable.</p>
+                        </article>
+                        <article class="system-card">
+                            <h3>Curtain wall systems</h3>
+                            <p>Lightweight aluminium and glass envelopes engineered for insulation, safety, and modern
+                                expression.</p>
+                        </article>
+                        <article class="system-card">
+                            <h3>Louvre systems</h3>
+                            <p>Architectural shading and airflow control systems with clean, durable detailing.</p>
+                        </article>
+                        <article class="system-card">
+                            <h3>Glass stair railings</h3>
+                            <p>Transparent railing systems for interiors and exteriors with a strong, minimal profile.
+                            </p>
+                        </article>
+                        <article class="system-card">
+                            <h3>Shutter and rolling systems</h3>
+                            <p>Secure, weather-aware closures engineered for reliable daily operation.</p>
+                        </article>
+                        <article class="system-card">
+                            <h3>Doors and window systems</h3>
+                            <p>Aluminium openings designed for strength, insulation, longevity, and design flexibility.
+                            </p>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="Projects">
+            <div class="section-shell">
+                <div class="section-heading is-centered">
+                    <span class="section-label">Portfolio</span>
+                    <h2>Selected projects across Egypt</h2>
+                    <p>
+                        Our work spans hospitality, education, healthcare, retail, office, and large-scale residential
+                        developments in Cairo, Alexandria, the North Coast, and emerging growth cities.
+                    </p>
+                </div>
+
+                <ul class="project-grid">
+                    <li class="surface-card project-card">
+                        <h3>STELLA SIDI ABD EL RAHMAN</h3>
+                        <p>North Coast, Egypt</p>
                     </li>
-                    <li class="features-li">
-                        <h3 class="li-h3">Doors & Window Systems</h3>
-                        <p class="li-p">High-quality aluminium doors and windows combining strength, insulation, and
-                            design
-                            flexibility.</p>
+                    <li class="surface-card project-card">
+                        <h3>MARINA RESIDENCE (Porto Marina)</h3>
+                        <p>Al Alamein, North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>EMARATES HEIGHTS</h3>
+                        <p>North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>TELAL EL ALAMEIN</h3>
+                        <p>Al Alamein, North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>STELLA HEIGHTS</h3>
+                        <p>North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>PORTO MARINA TOWERS</h3>
+                        <p>Al Alamein, North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>AMWAJ Club House</h3>
+                        <p>North Coast, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>CRYSTAL PLAZA</h3>
+                        <p>Maadi, Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>SENGHOR BORG EL ARAB UNIVERSITY</h3>
+                        <p>Borg El Arab, Alexandria, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>COLLEGE OF BUSINESS TECHNOLOGY</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>EL FOROSIA CLUB</h3>
+                        <p>Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>KOBRY EL QOBBA HOSPITAL</h3>
+                        <p>Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>COMMERCIAL SERVICES</h3>
+                        <p>Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>LA MIRADA COMPOUND</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>THE SQUARE COMPOUND</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>PORTO NEW CAIRO</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>CLEOPATRA PLAZA</h3>
+                        <p>Nasr City, Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>PORTO VILLAS COMPOUND</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>TOYOTA SHOWROOM</h3>
+                        <p>Abbassia, Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>STONE PARK COMPOUND</h3>
+                        <p>New Cairo, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>BLOOMFIELDS COMPOUND</h3>
+                        <p>Mostakbal City, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>THE CITY OF ODYSSIA</h3>
+                        <p>Mostakbal City, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>LA VENIER COMPOUND</h3>
+                        <p>Mostakbal City, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>ARIA COMPOUND</h3>
+                        <p>Mostakbal City, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>ETAPA COMPOUND</h3>
+                        <p>Sheikh Zayed, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>BENI SUEF NATIONAL UNIVERSITY</h3>
+                        <p>Beni Suef, Egypt</p>
+                    </li>
+                    <li class="surface-card project-card">
+                        <h3>ALEXANDRIA GOVERNORATE GENERAL OFFICE BUILDING</h3>
+                        <p>Alexandria, Egypt</p>
                     </li>
                 </ul>
             </div>
-            <!-- ///////////////////////////////// -->
-
-            <!-- ---------- Hero Video ---------- -->
-            <section class="video">
-                <iframe width="1547" height="870" src="https://www.youtube.com/embed/bzDeacfTEvs" title="HGAD"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h2 class="small-head">Designing Spaces That Last</h2>
-                <p class="sec-subheading">At HGAD, we believe architecture is more than buildings — it is about creating
-                    functional, sustainable,
-                    and inspiring spaces.
-                    Our team delivers architectural and engineering solutions that balance creativity, technical
-                    accuracy,
-                    and real-world execution.</p>
-            </section>
         </section>
 
-
-
-        <!-- ========== ///////////////////////////////// ========== -->
-
-
-        <!-- ---------- Key Figuers Panner ---------- -->
-        <section id="k-figuers">
-
-            <ul class="k-figuers">
-
-                <li class="figuer"><span class="figuer-key">10+</span> Years of Experience</li>
-                <li class="figuer"><span class="figuer-key">100+</span> Successful Projects</li>
-                <li class="figuer"><span class="figuer-key">100+</span> Trusted Partners</li>
-                <li class="figuer"><span class="figuer-key">20+</span> Professional Certificates</li>
-
-            </ul>
-        </section>
-
-
-        <!-- ============= Contact Section ============= -->
-
-        <section id="Contact">
-            <h1>Contact & Get a Quote</h1>
-            <p>Send us an Email to discuss your project, receive a proposal, or request a preliminary study</p>
-            <form id="form">
-
-                <!-- ---------- Name ---------- -->
-                <label class="name" for="name">Name:
-                    <input autocomplete="on" type="text" id="name" name="name" placeholder="e.g., Michael Adam"
-                        required>
-                </label>
-
-                <!-- ---------- Email ---------- -->
-                <label class="email" for="email">Email:
-                    <input autocomplete="on" type="email" id="email" name="email" placeholder="e.g., name@example.com"
-                        required>
-                </label>
-
-                <!-- ---------- Phone ---------- -->
-                <label class="phone" for="phone">Phone:
-                    <input autocomplete="on" type="tel" id="phone" name="phone" placeholder="e.g., +20 6000000000"
-                        required>
-                </label>
-
-                <!-- ---------- Address ---------- -->
-
-
-
-                <label class="country" for="country">
-                    Country: <select autocomplete="on" id="country" name="country" required>
-                        <option value="">Select country</option>
-                    </select>
-                </label>
-
-                <label class="governorate" for="governorate">
-                    Governorate:
-                    <select id="governorate" name="governorate" disabled required>
-                        <option value="">Select state</option>
-                    </select>
-                </label>
-
-                <label class="city" for="city">
-                    City:
-                    <select id="city" name="city" disabled>
-                        <option value="">Select city</option>
-                    </select>
-                </label>
-                <label class="project" for="project">
-                    Project Name:
-                    <input id="project" name="project" required>
-                </label>
-                <fieldset class="details">
-                    <legend>
-                        <h3>Your Message: </h3>
-                    </legend><textarea required cols="20" rows="5" id="message" name="message" minlength="10"
-                        placeholder="Your Project details........."></textarea>
-                </fieldset>
-                <!-- <label class="files" for="files">
-                    Project Files(If Available):
-                    <input type="file" id="files" name="files">
-                </label> --> <!-- will do it later!! -->
-
-
-                <button id="submit" type="submit">Send</button>
-                <p id="form-message"></p>
-            </form>
-
-            <!-- //////////////// SCRIPT \\\\\\\\\\\\\\\\\\ -->
-
-            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-            <script>
-                document.addEventListener("DOMContentLoaded", async () => {
-
-                    // ================= EMAILJS INIT =================
-                    emailjs.init("wfXbZdkQ8BZAGH0hS");
-
-                    // ================= FORM ELEMENTS =================
-                    const form = document.getElementById("form");
-                    const messageBox = document.getElementById("form-message");
-
-                    const country = document.getElementById("country");
-                    const governorate = document.getElementById("governorate");
-                    const city = document.getElementById("city");
-                    if (!form) {
-                        console.error("Form element not found!");
-                        return;
-                    }
-
-                    // ================= LOAD COUNTRIES =================
-                    try {
-                        const countriesRes = await fetch("https://countriesnow.space/api/v0.1/countries");
-                        const countriesData = await countriesRes.json();
-
-                        country.innerHTML = `<option value="">Select country</option>`;
-                        countriesData.data.forEach(c => {
-                            country.innerHTML += `<option value="${c.country}">${c.country}</option>`;
-                        });
-                    } catch (error) {
-                        console.error("Error loading countries:", error);
-                        country.innerHTML = `<option value="">Failed to load countries</option>`;
-                    }
-
-                    // ================= LOAD STATES =================
-                    country.addEventListener("change", async () => {
-                        governorate.disabled = true;
-                        city.disabled = true;
-
-                        try {
-                            const res = await fetch("https://countriesnow.space/api/v0.1/countries/states", {
-                                method: "POST",
-                                headers: { "Content-Type": "application/json" },
-                                body: JSON.stringify({ country: country.value })
-                            });
-
-                            const data = await res.json();
-                            governorate.innerHTML = `<option value="">Select state</option>`;
-                            data.data.states.forEach(s => {
-                                governorate.innerHTML += `<option value="${s.name}">${s.name}</option>`;
-                            });
-
-                            governorate.disabled = false;
-                        } catch (error) {
-                            console.error("Error loading states:", error);
-                            governorate.innerHTML = `<option value="">Failed to load states</option>`;
-                        }
-                    });
-
-                    // ================= LOAD CITIES =================
-                    governorate.addEventListener("change", async () => {
-                        city.disabled = true;
-
-                        try {
-                            const res = await fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
-                                method: "POST",
-                                headers: { "Content-Type": "application/json" },
-                                body: JSON.stringify({
-                                    country: country.value,
-                                    state: governorate.value
-                                })
-                            });
-
-                            const data = await res.json();
-                            city.innerHTML = `<option value="">Select city</option>`;
-                            data.data.forEach(c => {
-                                city.innerHTML += `<option value="${c}">${c}</option>`;
-                            });
-
-                            city.disabled = false;
-                        } catch (error) {
-                            console.error("Error loading cities:", error);
-                            city.innerHTML = `<option value="">Failed to load cities</option>`;
-                        }
-                    });
-
-                    // ================= FORM SUBMIT =================
-                    form.addEventListener("submit", function (e) {
-                        e.preventDefault();
-
-                        messageBox.textContent = "Sending...";
-                        messageBox.style.color = "green";
-
-                        emailjs.send("service_fw5nlte", "template_xaxgqzh", {
-                            name: form.name.value,
-                            email: form.email.value,
-                            phone: form.phone.value,
-                            country: form.country.value,
-                            governorate: form.governorate.value,
-                            city: form.city.value,
-                            project: form.project.value,
-                            message: form.message.value,
-                        })
-                            .then(() => {
-                                messageBox.textContent = "Message sent successfully...!";
-                                messageBox.style.color = "green";
-                                form.reset();
-                            })
-                            .catch((err) => {
-                                console.error("EmailJS Error:", err);
-                                messageBox.textContent = "Failed to send message!!!";
-                                messageBox.style.color = "red";
-                            });
-                    });
-
-                });
-            </script>
-        </section>
-
-
-
-
-
-
-
-
-        <!-- ========== ///////////////////////////////// ========== -->
-
-
-        <!-- ============= Projects Section ============= -->
-
-        <section id="Projects">
-
-            <h1 class="sec-heading">Our Projects</h1>
-
-            <ul class="projects-ul">
-                <li class="proj-li">
-                    <h2 class="proj-h2">STELLA<br>SIDI ABD EL RAHMAN</h2>
-                    <p class="proj-p">North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">MARINA RESIDENCE<br>(Porto Marina)</h2>
-                    <p class="proj-p">Al Alamein, North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">EMARATES HEIGHTS</h2>
-                    <p class="proj-p">North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">TELAL EL ALAMEIN</h2>
-                    <p class="proj-p">Al Alamein, North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">STELLA HEIGHTS</h2>
-                    <p class="proj-p">North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">PORTO MARINA TOWERS</h2>
-                    <p class="proj-p">Al Alamein, North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">AMWAJ<br>Club House</h2>
-                    <p class="proj-p">North Coast, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">CRYSTAL PLAZA</h2>
-                    <p class="proj-p">Maadi, Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">SENGHOR BORG EL ARAB UNIVERSITY</h2>
-                    <p class="proj-p">Borg El Arab, Alexandria, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">COLLEGE OF BUSINESS TECHNOLOGY</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">EL FOROSIA CLUB<br>(Military Entity)</h2>
-                    <p class="proj-p">Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">KOBRY EL QOBBA HOSPITAL</h2>
-                    <p class="proj-p">Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">COMMERCIAL SERVICES<br>Military Entity</h2>
-                    <p class="proj-p">Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">LA MIRADA COMPOUND Fifth Settlement</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">THE SQUARE COMPOUND</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">PORTO NEW CAIRO</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">CLEOPATRA PLAZA</h2>
-                    <p class="proj-p">Nasr City, Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">PORTO VILLAS COMPOUND</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">TOYOTA SHOWROOM</h2>
-                    <p class="proj-p">Abbassia, Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">STONE PARK COMPOUND</h2>
-                    <p class="proj-p">New Cairo, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">BLOOMFIELDS COMPOUND</h2>
-                    <p class="proj-p">Mostakbal City, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">THE CITY OF ODYSSIA</h2>
-                    <p class="proj-p">Mostakbal City, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">LA VENIER COMPOUND</h2>
-                    <p class="proj-p">Mostakbal City, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">ARIA COMPOUND</h2>
-                    <p class="proj-p">Mostakbal City, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">ETAPA COMPOUND</h2>
-                    <p class="proj-p">Sheikh Zayed, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">BENI SUEF NATIONAL UNIVERSITY</h2>
-                    <p class="proj-p">Beni Suef, Egypt</p>
-                </li>
-                <li class="proj-li">
-                    <h2 class="proj-h2">ALEXANDRIA GOVERNORATE GENERAL OFFICE BUILDING</h2>
-                    <p class="proj-p">Alexandria, Egypt</p>
-                </li>
-            </ul>
-
-        </section>
-
-
-
-
-
-
-
-        <!-- ========== ///////////////////////////////// ========== -->
-
-        <!-- ============= Services Section ============= -->
-
-
-        <section id="Services">
-
-            <h1 class="sec-heading">Our Services</h1>
-            <ul class="features-ul">
-                <li class="features-li">
-                    <h2 class="li-h2">Design & Engineering</h2>
-                    <p class="li-p">Detailed planning, system selection, and performance optimization for every project
+        <section class="section philosophy-section" id="Vision">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-label">Our Philosophy</span>
+                    <h2>Performance-first thinking from concept to handover</h2>
+                    <p>
+                        HGAD approaches each project as a balance of design quality, technical accuracy, fabrication
+                        discipline, and dependable site execution.
                     </p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Fabrication & Installation</h2>
-                    <p class="li-p">Precision manufacturing using the latest technologies, followed by professional
-                        on-site installation</p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Project Management</h2>
-                    <p class="li-p">Coordinated execution and timeline management to ensure project quality and on-time
-                        delivery</p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Technical Support</h2>
-                    <p class="li-p">Post-installation support and services to maintain performance and client
-                        satisfaction</p>
-                </li>
-            </ul>
+                </div>
 
+                <div class="card-grid philosophy-grid">
+                    <article class="surface-card value-card">
+                        <span class="value-index">01</span>
+                        <h3>Engineering before execution</h3>
+                        <p>We study site conditions, budgets, movement requirements, and performance needs before any
+                            system is finalized.</p>
+                    </article>
+                    <article class="surface-card value-card">
+                        <span class="value-index">02</span>
+                        <h3>Purpose-driven systems</h3>
+                        <p>Every facade and aluminium component must contribute to structural stability, thermal
+                            behavior, safety, and visual identity.</p>
+                    </article>
+                    <article class="surface-card value-card">
+                        <span class="value-index">03</span>
+                        <h3>Precision in fabrication</h3>
+                        <p>Shop drawings, manufacturing, and installation are coordinated carefully so the finished
+                            work remains consistent and exact.</p>
+                    </article>
+                    <article class="surface-card value-card">
+                        <span class="value-index">04</span>
+                        <h3>Built to perform on site</h3>
+                        <p>Our solutions are developed for real project conditions, not perfect laboratory scenarios,
+                            so they stay practical through installation and operation.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
+        <section class="section contact-section" id="Contact">
+            <div class="section-shell contact-grid">
+                <article class="surface-card contact-copy">
+                    <div class="section-heading">
+                        <span class="section-label">Contact</span>
+                        <h2>Send a clear project brief directly to HGAD</h2>
+                        <p>
+                            Tell us about your project scope, location, and priorities. The form keeps your details
+                            structured, loads live location data, and submits through your EmailJS setup.
+                        </p>
+                    </div>
 
-        <!-- ============= Vision Section ============= -->
+                    <ul class="contact-points">
+                        <li>Useful for developers, consultants, contractors, and private clients</li>
+                        <li>Share your project type, location, required systems, and target delivery timeline</li>
+                        <li>If a location is missing from the selector, you can still describe it in the project brief
+                        </li>
+                    </ul>
 
+                    <div class="surface-card contact-note">
+                        <h3>What helps us respond faster</h3>
+                        <p>Include the project name, expected system scope, location, and any performance or finishing
+                            requirements that matter to your team.</p>
+                    </div>
+                </article>
 
-        <section>
-            <h1 id="Vision" class="sec-heading">Our Philosophy</h1>
-            <ul class="features-ul">
-                <li class="features-li">
-                    <h2 class="li-h2">Engineering Before Execution</h2>
-                    <p class="li-p">Every project starts with a deep technical understanding. We study project
-                        requirements, performance needs, budget constraints, and site conditions before any system is
-                        selected</p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Purpose-Driven Systems</h2>
-                    <p class="li-p">Our aluminium and façade solutions are designed to serve real functions — structural
-                        stability, thermal performance, safety, and visual identity — not appearance alone</p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Precision in Fabricationt</h2>
-                    <p class="li-p">Accuracy defines our work. From detailed shop drawings to manufacturing and
-                        installation, every stage is carefully coordinated to ensure consistency and quality</p>
-                </li>
-                <li class="features-li">
-                    <h2 class="li-h2">Built to Perform on Site</h2>
-                    <p class="li-p">All HGAD systems are developed with real construction conditions in mind, ensuring
-                        smooth installation, durability, and long-term performance after handover</p>
-                </li>
-            </ul>
+                <div class="surface-card form-panel">
+                    <form id="form" data-emailjs-service-id="service_fw5nlte"
+                        data-emailjs-template-id="template_xaxgqzh" data-emailjs-public-key="wfXbZdkQ8BZAGH0hS">
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Name</span>
+                                <input autocomplete="name" type="text" id="name" name="name"
+                                    placeholder="e.g. Michael Adam" minlength="2" required>
+                            </label>
 
+                            <label class="field">
+                                <span>Email</span>
+                                <input autocomplete="email" type="email" id="email" name="email"
+                                    placeholder="e.g. name@example.com" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Phone</span>
+                                <input autocomplete="tel" type="tel" id="phone" name="phone"
+                                    placeholder="e.g. +20 6000000000" inputmode="tel" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Project name</span>
+                                <input type="text" id="project" name="project" placeholder="e.g. Mixed-use tower"
+                                    minlength="2" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Country</span>
+                                <select autocomplete="country-name" id="country" name="country" required>
+                                    <option value="">Loading countries...</option>
+                                </select>
+                            </label>
+
+                            <label class="field">
+                                <span>Governorate / State</span>
+                                <select id="governorate" name="governorate" disabled required>
+                                    <option value="">Select governorate / state</option>
+                                </select>
+                            </label>
+
+                            <label class="field">
+                                <span>City</span>
+                                <select id="city" name="city" disabled>
+                                    <option value="">Select city</option>
+                                </select>
+                            </label>
+
+                            <label class="field field-full">
+                                <span>Project brief</span>
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="Tell us about the building type, required systems, timeline, and any technical or finishing priorities."></textarea>
+                            </label>
+
+                            <input type="hidden" id="location" name="location">
+                            <input type="hidden" id="submitted-at" name="submitted_at">
+                        </div>
+
+                        <div class="form-actions">
+                            <button id="submit" class="button button-primary form-submit" type="submit">Send Request
+                            </button>
+                            <p class="assistive-text">Your draft is saved locally in this browser while you type, then
+                                sent when you submit.</p>
+                            <p id="form-message" class="form-message" aria-live="polite"></p>
+                        </div>
+                    </form>
+
+                    <article id="request-preview" class="draft-preview" hidden>
+                        <h3>Prepared request summary</h3>
+                        <pre id="request-preview-body"></pre>
+                    </article>
+                </div>
+            </div>
         </section>
-
-
-
-        <!-- ========== ///////////////////////////////// ========== -->
-
-
-        <footer>
-            <ul class="footer">
-                <li class="copyright">&copy; 2026 HGAD – All Rights Reserved</li>
-                <li class="footer-link"><a href="#Contact">Contact</a></li>
-            </ul>
-        </footer>
     </main>
 
+    <footer class="site-footer">
+        <div class="section-shell footer-shell">
+            <p>&copy; <span id="year"></span> HGAD. Aluminium systems and facade engineering for high-performance
+                buildings.</p>
+            <div class="footer-links">
+                <a href="#Features">Back to top</a>
+                <a href="#Contact">Start a project</a>
+                <a href="https://hgad-eg.com/" rel="noopener" target="_blank">hgad-eg.com</a>
+            </div>
+        </div>
+        <div class="dev-info"><a rel="noopener" href="https://yasser-diab.github.io/profile-page/" target="_blank">By
+                Yasser Diab</a>
+        </div>
+    </footer>
 </body>
 
 </html>
-
