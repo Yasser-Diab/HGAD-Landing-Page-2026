@@ -2,6 +2,7 @@
 
 A responsive, mobile-first product landing page for **Handasia Group for Architectural Designs (HGAD)**.  
 The project showcases HGAD’s aluminium systems, façade engineering services, projects portfolio, and includes a fully functional contact form integrated with EmailJS.
+Live Demo: https://yasser-diab.github.io/HGAD-Landing-Page-2026/
 
 ---
 
@@ -25,9 +26,6 @@ The design follows a **mobile-first approach**, with desktop styles planned as a
 
 ## Features
 - Mobile-first responsive layout
-- Fixed header with smooth scrolling navigation
-- Animated metallic gradients using HSLA color model
-- Hero section with video background
 - Dynamic country → governorate → city selection (API-driven)
 - Contact form with EmailJS integration
 - Clean semantic HTML structure
@@ -37,7 +35,7 @@ The design follows a **mobile-first approach**, with desktop styles planned as a
 
 ## Technologies Used
 - HTML5
-- CSS3 (Grid, Flexbox, Variables, Animations)
+- CSS3 (Grid, Flexbox, Variables)
 - JavaScript (ES6+, async/await)
 - EmailJS (SMTP service integration)
 - Public Countries API (countriesnow.space)
@@ -62,6 +60,7 @@ Form submissions are sent directly to the company email using **EmailJS SMTP ser
 /
 ├── index.html
 ├── styles.css
+├── script.js
 ├── media/
 │   ├── HGAD-Dark.png
 │   └── HGAD-compressed-header-logo.jpg
@@ -69,14 +68,11 @@ Form submissions are sent directly to the company email using **EmailJS SMTP ser
 
 
 ## Notes & Limitations
-
-- Desktop-specific styles are not yet implemented.
 - API availability depends on the public countries API uptime (for now).
 
 
 ## Future Enhancements
 
-- Desktop and large-screen layouts
 - Backend integration for real file uploads
 - Improved accessibility (ARIA roles)
 - Performance optimizations
